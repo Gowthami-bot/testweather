@@ -6,17 +6,39 @@
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="cloudy.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
     <div class="container">
-        <h2>Weather App</h2>
-        <p>Check today's weather instantly</p>
-        <div class="searchcontainer">
-            <input type="text" placeholder="Enter your city...">
-            <button>Search</button>
+        <div class="title">
+        <h1>Weather App</h1>
+        <p style="margin-bottom: 12px; font-size: 18px;">Check today's weather instantly</p>
         </div>
-    
-
+        <div class="searchcontainer">
+            <input type="text" placeholder="Enter your city..." spellcheck="false">
+            <button><i class="fa-solid fa-magnifying-glass"></i> </button>
+        </div>
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
 </body>
